@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caffè Nina</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome (iconos) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="contenedor header-flex">
+            <span class="logo">Caffè Nina</span>
+
+            <nav class="menu">
+                <a href="#inicio">Inicio</a>
+                <a href="#productos">Productos</a>
+                <a href="#galeria">Galería</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-content">
+
+        <!-- SECCION HERO -->
+        <section id="inicio" class="hero">
+            <div class="hero-texto">
+                <h1>Caffè Nina</h1>
+                <p>Date un respiro, bien cargado.</p>
+                <a href="#productos" class="btn">Ver productos</a>
+            </div>
+        </section>
+
+        <!-- SECCION PRODUCTOS / TARJETAS -->
+        <section id="productos" class="productos">
+            <div class="contenedor">
+                <h2>Nuestro café</h2>
+
+                <div class="tarjetas">
+
+                    <div class="tarjeta">
+                        <img src="assets/img/producto-grano.jpg" alt="Café en grano">
+                        <h3>Café en grano</h3>
+                        <p>Tueste claro, ideal para filtrado en casa.</p>
+                        <a href="#contacto" class="btn btn-secundario">Pedir</a>
+                    </div>
+
+                    <div class="tarjeta">
+                        <img src="assets/img/producto-espresso.jpg" alt="Café espresso">
+                        <h3>Espresso</h3>
+                        <p>Tueste medio, cuerpo intenso y notas a cacao.</p>
+                        <a href="#contacto" class="btn btn-secundario">Pedir</a>
+                    </div>
+
+                    <div class="tarjeta">
+                        <img src="assets/img/producto-coldbrew.jpg" alt="Cold brew">
+                        <h3>Cold Brew</h3>
+                        <p>Infusión en frío durante 12 horas. Suave y dulce.</p>
+                        <a href="#contacto" class="btn btn-secundario">Pedir</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION GALERIA -->
+        <section id="galeria" class="galeria">
+            <div class="contenedor">
+                <h2>Galería</h2>
+
+                <div class="galeria-flex">
+                    <img src="assets/img/galeria-1.jpg" alt="Barista preparando café">
+                    <img src="assets/img/galeria-2.jpg" alt="Granos de café verde">
+                    <img src="assets/img/galeria-3.jpg" alt="Capuchino con arte latte">
+                    <img src="assets/img/galeria-4.jpg" alt="Interior de la cafetería">
+                    <img src="assets/img/galeria-5.jpg" alt="Café filtrado">
+                    <img src="assets/img/galeria-6.jpg" alt="Bolsas de café tostado">
+                    <img src="assets/img/galeria-7.jpg" alt="Plantación de café">
+                    <img src="assets/img/galeria-8.jpg" alt="Taza de café servida">
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION CONTACTO -->
+        <section id="contacto" class="contacto">
+            <div class="contenedor">
+                <h2>Contacto</h2>
+
+                <form class="formulario">
+
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="tu@email.com">
+
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="341 000 0000">
+
+                    <label for="motivo">¿Qué necesitas?</label>
+                    <select id="motivo" name="motivo">
+                        <option value="pedido">Pedido personalizado</option>
+                        <option value="mayorista">Compra mayorista</option>
+                        <option value="trabajo">Trabajar con nosotros</option>
+                    </select>
+
+                    <p>¿Cómo nos conociste?</p>
+                    <label class="opcion"><input type="radio" name="origen" value="instagram" checked> Instagram</label>
+                    <label class="opcion"><input type="radio" name="origen" value="recomendacion"> Recomendación</label>
+                    <label class="opcion"><input type="radio" name="origen" value="google"> Google</label>
+
+                    <label class="opcion"><input type="checkbox" name="newsletter" value="si"> Quiero recibir novedades</label>
+
+                    <label for="Mensaje">Mensaje</label>
+                    <textarea id="Mensaje" name="Mensaje" rows="4" placeholder="Contanos qué necesitás"></textarea>
+
+                    <div class="form-botones">
+                        <button type="submit" class="btn">Enviar</button>
+                        <button type="reset" class="btn btn-secundario">Limpiar</button>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="contenedor footer-flex">
+            <p>&copy; 2026 Caffè Nina</p>
+
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
